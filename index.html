@@ -776,7 +776,7 @@
         // ===== Supabase 配置 =====
         // 请在这里填入你的 Supabase 配置
         const SUPABASE_URL = 'https://pfjtzohwrxhgegglqlna.supabase.co'; // 替换为你的 Supabase URL
-        const SUPABASE_KEY = 'sb_publishable_qmDiWlDDUClRelw-QQzGDw_m29v6qmM'; // 替换为你的 Supabase 匿名密钥
+        const SUPABASE_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InBmanR6b2h3cnhoZ2VnZ2xxbG5hIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NjgzNzI4MjcsImV4cCI6MjA4Mzk0ODgyN30.oGYP_uMmdEzN7kcZIJQA6OexVT7YHC8AgvtUQbJr0xY'; // 替换为你的 Supabase 匿名密钥
         
         let supabase;
         let projects = [];
@@ -785,7 +785,7 @@
         // 初始化 Supabase
         function initSupabase() {
             try {
-                if (SUPABASE_URL === 'https://pfjtzohwrxhgegglqlna.supabase.co' || SUPABASE_KEY === 'sb_publishable_qmDiWlDDUClRelw-QQzGDw_m29v6qmM') {
+                if (SUPABASE_URL === 'https://pfjtzohwrxhgegglqlna.supabase.co' || SUPABASE_KEY === eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InBmanR6b2h3cnhoZ2VnZ2xxbG5hIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NjgzNzI4MjcsImV4cCI6MjA4Mzk0ODgyN30.oGYP_uMmdEzN7kcZIJQA6OexVT7YHC8AgvtUQbJr0xY') {
                     showConnectionStatus('未配置', false);
                     showMessage('请先配置 Supabase 连接信息', 'error');
                     return false;
